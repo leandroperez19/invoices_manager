@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
     border-radius: 0 25px 25px 0;
   }
   .logo{
-    width: 10%;
+    width: 20%;
     max-width: 80px;
     height: 100%;
     border-radius: 0 25px 25px 0;
@@ -45,25 +45,45 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: fit-content;
+    flex-direction: row;
+    height: 100%;
     .themeSwitch{
       font-size: 25px;
       color: #ccc;
+      margin-right: 10px;
     }
     .profileImg{
-      /* margin-top: 20px; */
-      margin-bottom: 60px;
-      border-top: 1px solid #ccc;
-      width: 100%;
-      background-color: #004;
-      height: fit-content;
+      border-left: 1px solid #aaa;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
       img{
-        height: 75px;
-        width: 25px;
+        height: 35px;
+        width: 35px;
         background-color: #fff;
         border-radius: 50%;
         object-fit: cover;
+      }
+    }
+    @media (min-width: 768px) {
+      flex-direction: column;
+      height: fit-content;
+      .themeSwitch{
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+      .profileImg{
+        margin-bottom: 30px;
+        border-top: 1px solid #aaa;
+        border-left: none;
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        img{
+          margin-top: 20px;
+        }
       }
     }
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './components/header';
 import Navbar from './components/navbar';
 import { GlobalStyles } from './styles/global';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <Navbar />
+      <Header invoices={null} />
     </div>
   );
 }
