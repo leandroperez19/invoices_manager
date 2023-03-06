@@ -12,6 +12,9 @@ export const Wrapper = styled.div`
     width: 5em;
     flex-direction: column;
     border-radius: 0 25px 25px 0;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
   }
   .logo{
     width: 20%;

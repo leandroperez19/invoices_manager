@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderWrap = styled.div`
-  width: 80%;
+  width: calc(100% - 40px);
   height: 3em;
   position: relative;
   margin: 40px auto;
@@ -38,7 +38,7 @@ export const HeaderWrap = styled.div`
   }
   button{
     height: 100%;
-    padding:  7px;
+    padding:  7px 5px;
     color: #fff;
     position: relative;
     border-radius: 25px;
